@@ -36,7 +36,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Tech Stack
 
 [Next.js](https://nextjs.org/)
+
 [React](https://ja.reactjs.org/)
+
 [three.js](https://threejs.org/)
+
 [PixiJS](https://www.pixijs.com/)
+
 [Anime.js](https://animejs.com/)
