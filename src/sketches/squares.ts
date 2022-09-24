@@ -1,6 +1,6 @@
 import p5 from "p5";
 
-const Squares = (p: p5) => {
+const squares = (p: p5) => {
   p.setup = () => {
     p.createCanvas(window.innerWidth, window.innerHeight, p.WEBGL);
   };
@@ -18,4 +18,4 @@ const Squares = (p: p5) => {
   };
 };
 
-export default Squares;
+export default squares;

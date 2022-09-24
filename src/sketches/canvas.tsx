@@ -7,3 +7,5 @@ const Canvas = (props: any) => {
   }, [props.sketch]);
   return <></>;
 };
+
+export default Canvas
