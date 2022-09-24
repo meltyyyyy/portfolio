@@ -2,7 +2,7 @@ import p5 from "p5";
 
 const squares = (p: p5) => {
   p.setup = () => {
-    p.createCanvas(window.innerWidth, window.innerHeight, p.WEBGL);
+    p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
   };
   p.draw = () => {
     p.background("#EAEAEA")
