@@ -19,3 +19,22 @@ const squares = (p: p5) => {
 };
 
 export default squares;
+
+// function setup() {
+//   createCanvas(windowWidth, windowHeight, WEBGL);
+//   background('#EAEAEA');
+// }
+
+// function draw() {
+//   stroke('#FFFFFF')
+//   y = 10 * sin(TWO_PI * frameCount * 0.01 / 360)
+//   for (i=-windowWidth;i < windowWidth; i++){
+//     x1 = i / 360
+//     x2 = (i + 1) / 360
+//     y1 = 100 * sin(TWO_PI * x1 * 0.3) + i * 0.1 /
+//       + y
+//     y2 = 100 * sin(TWO_PI * x2 * 0.3) + (i + 1) * 0.1 /
+//       + y
+//     line(i, y1, i + 1, y2)
+//   }
+// }
