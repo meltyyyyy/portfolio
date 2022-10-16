@@ -20,21 +20,34 @@ const squares = (p: p5) => {
 
 export default squares;
 
+// var offset = 0;
+
 // function setup() {
-//   createCanvas(windowWidth, windowHeight, WEBGL);
+//   createCanvas(windowWidth, 400, WEBGL);
 //   background('#EAEAEA');
 // }
 
 // function draw() {
+//   background('#EAEAEA');
 //   stroke('#FFFFFF')
-//   y = 10 * sin(TWO_PI * frameCount * 0.01 / 360)
-//   for (i=-windowWidth;i < windowWidth; i++){
-//     x1 = i / 360
-//     x2 = (i + 1) / 360
-//     y1 = 100 * sin(TWO_PI * x1 * 0.3) + i * 0.1 /
-//       + y
-//     y2 = 100 * sin(TWO_PI * x2 * 0.3) + (i + 1) * 0.1 /
-//       + y
-//     line(i, y1, i + 1, y2)
+//   noFill();
+//   renderCurve(offset)
+//   offset += 0.05;
+// }
+
+// function renderCurve(offset){
+//   beginShape();
+//   vertex(0, height);
+//   for(let x = -windowWidth; x < windowWidth; x++){
+//     let y = calcCurve(offset, x)
+//     vertex(x, y);
 //   }
+//   vertex(width, height);
+//   endShape();
+// }
+
+// function calcCurve(offset, x){
+//   let angle = offset + x * 0.01;
+//   let y = 0.3 * (- 0.05 * x) * sin(0.1 * angle) + 0.1 * x * cos(0.5 * angle) + 0.1 * x
+//   return y
 // }
