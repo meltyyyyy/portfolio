@@ -21,33 +21,77 @@ const squares = (p: p5) => {
 export default squares;
 
 // var offset = 0;
+// let color = 0;
 
 // function setup() {
 //   createCanvas(windowWidth, 400, WEBGL);
-//   background('#EAEAEA');
+//   background(234,234,234);
 // }
 
 // function draw() {
-//   background('#EAEAEA');
+//   setBackground(color)
 //   stroke('#FFFFFF')
 //   noFill();
-//   renderCurve(offset)
+//   renderCurve1(offset)
+//   renderCurve2(offset)
+//   renderCurve3(offset)
 //   offset += 0.05;
+//   color += 0.01;
 // }
 
-// function renderCurve(offset){
+// function renderCurve1(offset){
 //   beginShape();
 //   vertex(0, height);
 //   for(let x = -windowWidth; x < windowWidth; x++){
-//     let y = calcCurve(offset, x)
+//     let y = calcCurve1(offset, x)
 //     vertex(x, y);
 //   }
 //   vertex(width, height);
 //   endShape();
 // }
 
-// function calcCurve(offset, x){
+// function calcCurve1(offset, x){
 //   let angle = offset + x * 0.01;
 //   let y = 0.3 * (- 0.05 * x) * sin(0.1 * angle) + 0.1 * x * cos(0.5 * angle) + 0.1 * x
 //   return y
+// }
+
+// function renderCurve2(offset){
+//   beginShape();
+//   vertex(0, height);
+//   for(let x = -windowWidth; x < windowWidth; x++){
+//     let y = calcCurve2(offset, x)
+//     vertex(x, y);
+//   }
+//   vertex(width, height);
+//   endShape();
+// }
+
+// function calcCurve2(offset, x){
+//   let angle = offset + x * 0.01;
+//   let y = 0.3 * (- 0.05 * x) * sin(0.1 * angle + PI) + 0.05 * x * cos(0.5 * angle + PI) + 0.2 * (x + 10)
+//   return y + 2
+// }
+
+// function renderCurve3(offset){
+//   beginShape();
+//   vertex(0, height);
+//   for(let x = -windowWidth; x < windowWidth; x++){
+//     let y = calcCurve3(offset, x)
+//     vertex(x, y);
+//   }
+//   vertex(width, height);
+//   endShape();
+// }
+
+// function calcCurve3(offset, x){
+//   let angle = offset + x * 0.01;
+//   let y = 0.1 * (- 0.05 * (x - 1) ) * sin(0.1 * angle + PI) + 0.2 * cos(0.5 * angle) + 0.2 * x - 1
+//   return y
+// }
+
+// function setBackground(color){
+//   dr = 2.5 * sin(0.1 * color)
+//   db = 2.5 * sin(0.1 * (color + PI))
+//   background(234 + dr, 234, 234 + db);
 // }
