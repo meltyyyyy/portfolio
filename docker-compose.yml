@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  portfolio:
+    build: .
+    image: node:latest
+    container_name: portfolio
+    tty: true
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/root/portfolio
+
