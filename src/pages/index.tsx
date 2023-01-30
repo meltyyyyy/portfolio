@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 
-import squares from "sketches/squares";
+import rhombus from "sketches/rhombus";
 
 const Canvas = dynamic(() => import("sketches/canvas"), { ssr: false });
 
@@ -9,7 +9,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Canvas sketch={squares} />
+      <Canvas sketch={rhombus} />
     </>
   );
 };
