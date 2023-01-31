@@ -25,7 +25,7 @@ const rhombus = (p: p5) => {
   let timer = 26;
 
   p.preload = () => {
-    song = p.loadSound("aishii x dxsbond - antirealign.mp3");
+    song = p.loadSound(`/music.mp3`);
   };
   p.setup = () => {
     p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
