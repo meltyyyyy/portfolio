@@ -31,10 +31,44 @@ const Home: NextPage = () => {
         <Stack direction={"row"}>
           <Button
             onClick={() => setOpenAbout(true)}
-            sx={{ fontSize: 14, mr: 1 }} variant="text"
+            sx={{
+              color: "#000000",
+              '&:hover': {
+                background: "transparent",
+                color: '#797979'
+              },
+              fontSize: 14,
+              mr: 1,
+              minHeight: 0,
+              minWidth: 0,
+              padding: 0
+            }}
+            variant="text"
           >ABOUT</Button>
-          <Button sx={{ fontSize: 14, mr: 1 }} variant="text">WORK</Button>
-          <Button sx={{ fontSize: 14, mr: 1 }} variant="text">CONTACT</Button>
+          <Button sx={{
+            color: "#000000",
+            '&:hover': {
+              background: "transparent",
+              color: '#797979'
+            },
+            fontSize: 14,
+            mx: 1,
+            minHeight: 0,
+            minWidth: 0,
+            padding: 0
+          }} variant="text">WORK</Button>
+          <Button sx={{
+            color: "#000000",
+            '&:hover': {
+              background: "transparent",
+              color: '#797979'
+            },
+            fontSize: 14,
+            mx: 1,
+            minHeight: 0,
+            minWidth: 0,
+            padding: 0
+          }} variant="text">CONTACT</Button>
         </Stack>
       </Box>
     </>
