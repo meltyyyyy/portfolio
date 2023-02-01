@@ -1,4 +1,4 @@
-import { Button, Modal, Paper } from "@mui/material";
+import { Button, Modal } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
@@ -18,9 +18,9 @@ const Home: NextPage = () => {
       >
         <Box sx={{ my: 12, mx: 16 }}>
           <Box color={"#FFFFFF"} fontSize={40}>ABOUT</Box>
-          <Stack direction={"row"} justifyContent={"space-evenly"}>
-          <Box sx={{ color: "#FFFFFF", fontSize: 24, my: 2 }}>阿部 武</Box>
-          <Box sx={{ color: "#FFFFFF", fontSize: 24, my: 2 }}>TAKERU ABE</Box>
+          <Stack direction={"row"} justifyContent={"space-between"}>
+          <Box sx={{ color: "#FFFFFF", fontSize: 18, my: 2, width: "50%" }}>阿部 武</Box>
+          <Box sx={{ color: "#FFFFFF", fontSize: 18, my: 2, width: "50%" }}>TAKERU ABE</Box>
           </Stack>
         </Box>
       </Modal>
