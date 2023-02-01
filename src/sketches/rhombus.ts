@@ -16,7 +16,6 @@ const rhombus = (p: p5) => {
   };
   p.setup = () => {
     p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
-    p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
     p.angleMode(p.DEGREES);
     fft = new p5.FFT();
     p.orbitControl();
