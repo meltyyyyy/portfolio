@@ -1,7 +1,7 @@
 import { Button, Modal } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import About from "components/about";
-import { GitHubIcon, LinkedInIcon, TwitterIcon } from "components/appIcons";
+import { FacebookIcon, GitHubIcon, LinkedInIcon, TwitterIcon } from "components/appIcons";
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import { useState } from "react";
@@ -24,9 +24,35 @@ const Home: NextPage = () => {
         <Stack direction={"row"} justifyContent={"space-between"} alignItems="center">
           <Box sx={{ fontSize: 28, fontWeight: "bold" }}>TAKERU ABE</Box>
           <Stack direction={"row"}>
-            <TwitterIcon/>
-            <GitHubIcon/>
-            <LinkedInIcon/>
+            <TwitterIcon
+              sx={{
+                mx: 1,
+                '&:hover': {
+                  background: "transparent",
+                  color: '#797979'
+                },
+              }} />
+            <GitHubIcon sx={{
+              mx: 1,
+              '&:hover': {
+                background: "transparent",
+                color: '#797979'
+              },
+            }} />
+            <LinkedInIcon sx={{
+              mx: 1,
+              '&:hover': {
+                background: "transparent",
+                color: '#797979'
+              },
+            }} />
+            <FacebookIcon sx={{
+              ml: 1,
+              '&:hover': {
+                background: "transparent",
+                color: '#797979'
+              },
+            }} />
           </Stack>
         </Stack>
         <Stack direction={"row"}>
