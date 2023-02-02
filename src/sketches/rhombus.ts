@@ -5,7 +5,7 @@ import p5 from "p5";
 const rhombus = (p: p5) => {
   let song: p5.SoundFile;
   let fft: p5.FFT;
-  let bubbles: BubblesBase[] = [];
+  const bubbles: BubblesBase[] = [];
   let rotx = 0.0;
   let roty = 0.0;
   let tiny = 0;
@@ -15,7 +15,7 @@ const rhombus = (p: p5) => {
     song = p.loadSound(`/music.mp3`);
   };
   p.setup = () => {
-    let canvas = p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
+    const canvas = p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
     canvas.position(0, 0);
     canvas.style('z-index', '-1');
     p.angleMode(p.DEGREES);
@@ -24,9 +24,9 @@ const rhombus = (p: p5) => {
   };
   p.draw = () => {
     p.background(255);
-    let purple = 255;
-    let yellow = 25;
-    let green = 70;
+    const purple = 255;
+    const yellow = 25;
+    const green = 70;
 
     if (tiny < 5) {
       tiny = p.frameCount % 60;
@@ -46,8 +46,8 @@ const rhombus = (p: p5) => {
       p.pointLight(0, 100, green, 0.0, -200.0, -200.0);
     }
 
-    let targetx = p.mouseY;
-    let targety = p.mouseX;
+    const targetx = p.mouseY;
+    const targety = p.mouseX;
     rotx += (targetx - rotx) * 0.04;
     roty += (targety - roty) * 0.04;
 
@@ -71,7 +71,7 @@ const rhombus = (p: p5) => {
     p.rotateX(60);
 
     fft.analyze();
-    let wave = fft.waveform();
+    const wave = fft.waveform();
 
     p.strokeWeight(1);
     for (let i = 0; i < 17; i++) {
@@ -80,9 +80,9 @@ const rhombus = (p: p5) => {
 
       p.beginShape();
       for (let j = 0; j < 360; j += 60) {
-        let rad = i * 0.08;
-        let index = p.floor(p.map(i, 0, 180, 0, wave.length - 1));
-        let rod = p.map(wave[index], -1, 1, 15, 350);
+        const rad = i * 0.08;
+        const index = p.floor(p.map(i, 0, 180, 0, wave.length - 1));
+        const rod = p.map(wave[index], -1, 1, 15, 350);
         p.noFill();
         p.vertex(rad * p.sin(j) * rod, rad * -p.tan(j) * rod, p.sin(p.frameCount * 4 + i * 2) * 60);
       }

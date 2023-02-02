@@ -1,4 +1,4 @@
-import { Button, Link, Modal, Grid, Paper } from "@mui/material";
+import { Button, Link, Modal } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import { FacebookUrl, GitHubUrl, LinkedInUrl, TwitterUrl } from "common/constants";
 import About from "components/about";
