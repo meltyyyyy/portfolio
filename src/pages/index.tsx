@@ -1,5 +1,6 @@
-import { Button, Modal } from "@mui/material";
+import { Button, Link, Modal } from "@mui/material";
 import { Box, Stack } from "@mui/system";
+import { FacebookUrl, GitHubUrl, LinkedInUrl, TwitterUrl } from "common/constants";
 import About from "components/about";
 import { FacebookIcon, GitHubIcon, LinkedInIcon, TwitterIcon } from "components/appIcons";
 import type { NextPage } from "next";
@@ -24,35 +25,43 @@ const Home: NextPage = () => {
         <Stack direction={"row"} justifyContent={"space-between"} alignItems="center">
           <Box sx={{ fontSize: 28, fontWeight: "bold" }}>TAKERU ABE</Box>
           <Stack direction={"row"}>
-            <TwitterIcon
-              sx={{
+            <Link href={TwitterUrl} target="_blank" rel="noopener noreferrer" color="inherit">
+              <TwitterIcon
+                sx={{
+                  mx: 1,
+                  '&:hover': {
+                    background: "transparent",
+                    color: '#797979'
+                  },
+                }} />
+            </Link>
+            <Link href={GitHubUrl} target="_blank" rel="noopener noreferrer" color="inherit">
+              <GitHubIcon sx={{
                 mx: 1,
                 '&:hover': {
                   background: "transparent",
                   color: '#797979'
                 },
               }} />
-            <GitHubIcon sx={{
-              mx: 1,
-              '&:hover': {
-                background: "transparent",
-                color: '#797979'
-              },
-            }} />
-            <LinkedInIcon sx={{
-              mx: 1,
-              '&:hover': {
-                background: "transparent",
-                color: '#797979'
-              },
-            }} />
-            <FacebookIcon sx={{
-              ml: 1,
-              '&:hover': {
-                background: "transparent",
-                color: '#797979'
-              },
-            }} />
+            </Link>
+            <Link href={LinkedInUrl} target="_blank" rel="noopener noreferrer" color="inherit">
+              <LinkedInIcon sx={{
+                mx: 1,
+                '&:hover': {
+                  background: "transparent",
+                  color: '#797979'
+                },
+              }} />
+            </Link>
+            <Link href={FacebookUrl} target="_blank" rel="noopener noreferrer" color="inherit">
+              <FacebookIcon sx={{
+                ml: 1,
+                '&:hover': {
+                  background: "transparent",
+                  color: '#797979'
+                },
+              }} />
+            </Link>
           </Stack>
         </Stack>
         <Stack direction={"row"}>
