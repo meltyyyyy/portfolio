@@ -1,6 +1,7 @@
 import { Box, Grid, IconButton, Paper, Stack } from "@mui/material";
 import React, { forwardRef } from "react";
 import CloseIcon from "@mui/icons-material/Close";
+import Image from 'next/image';
 
 const Work = (
   props: {
@@ -24,15 +25,30 @@ const Work = (
               sx={{
                 my: 1,
                 height: "160px",
+                width: "100%",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
               }}
             >
-              Image
+              <div style={{
+                position: 'relative',
+                width: '100%',
+                height: '160px',
+                overflow: "hidden",
+                borderRadius: "10px"
+              }}>
+                <Image
+                  src={"/assets/work/portfolio.jpg"}
+                  alt="portfolio"
+                  layout='fill'
+                  objectFit='cover'
+                  onClick={() => window.open("https://github.com/meltyyyyy/portfolio")}
+                />
+              </div>
             </Paper>
             <Box sx={{ variant: "text", color: "#FFFFFF", my: 1 }}>
-              Something
+              Portfolio
             </Box>
           </Box>
         </Grid>
@@ -47,10 +63,10 @@ const Work = (
                 justifyContent: "center",
               }}
             >
-              Image
+              Coming soon
             </Paper>
             <Box sx={{ variant: "text", color: "#FFFFFF", my: 1 }}>
-              Something
+              Coming soon
             </Box>
           </Box>
         </Grid>
@@ -65,10 +81,10 @@ const Work = (
                 justifyContent: "center",
               }}
             >
-              Image
+              Coming soon
             </Paper>
             <Box sx={{ variant: "text", color: "#FFFFFF", my: 1 }}>
-              Something
+              Coming soon
             </Box>
           </Box>
         </Grid>
@@ -83,10 +99,10 @@ const Work = (
                 justifyContent: "center",
               }}
             >
-              Image
+              Coming soon
             </Paper>
             <Box sx={{ variant: "text", color: "#FFFFFF", my: 1 }}>
-              Something
+              Coming soon
             </Box>
           </Box>
         </Grid>
@@ -103,10 +119,10 @@ const Work = (
                 justifyContent: "center",
               }}
             >
-              Image
+              Coming soon
             </Paper>
             <Box sx={{ variant: "text", color: "#FFFFFF", my: 1 }}>
-              Something
+              Coming soon
             </Box>
           </Box>
         </Grid>
@@ -121,10 +137,10 @@ const Work = (
                 justifyContent: "center",
               }}
             >
-              Image
+              Coming soon
             </Paper>
             <Box sx={{ variant: "text", color: "#FFFFFF", my: 1 }}>
-              Something
+              Coming soon
             </Box>
           </Box>
         </Grid>
@@ -139,10 +155,10 @@ const Work = (
                 justifyContent: "center",
               }}
             >
-              Image
+              Coming soon
             </Paper>
             <Box sx={{ variant: "text", color: "#FFFFFF", my: 1 }}>
-              Something
+              Coming soon
             </Box>
           </Box>
         </Grid>
@@ -157,10 +173,10 @@ const Work = (
                 justifyContent: "center",
               }}
             >
-              Image
+              Coming soon
             </Paper>
             <Box sx={{ variant: "text", color: "#FFFFFF", my: 1 }}>
-              Something
+              Coming soon
             </Box>
           </Box>
         </Grid>
