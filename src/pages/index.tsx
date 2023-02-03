@@ -29,8 +29,8 @@ const Home: NextPage = () => {
 
   return (
     <>
-      {/* <div id="p5_loading"></div>
-      <Canvas /> */}
+      <div id="p5_loading"></div>
+      <Canvas />
       <Modal open={openAbout} onClose={() => setOpenAbout(false)}>
         <RefAbout setOpenAbout={setOpenAbout} />
       </Modal>
