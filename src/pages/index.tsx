@@ -13,7 +13,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from "components/appIcons";
-import Work from "components/work";
+import RefWork from "components/work";
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import { useState } from "react";
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         <About />
       </Modal>
       <Modal open={openWork} onClose={() => setOpenWork(false)}>
-        <Work />
+        <RefWork />
       </Modal>
       <Box sx={{ m: 2 }}>
         <Stack
