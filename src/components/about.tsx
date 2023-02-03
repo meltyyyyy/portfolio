@@ -1,18 +1,19 @@
 import { Box, IconButton, Stack } from "@mui/material";
 import { forwardRef } from "react";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
 
-const About = (props: {
-  setOpenAbout: React.Dispatch<React.SetStateAction<boolean>>;
-}, ref: React.Ref<HTMLElement>) => {
+const About = (
+  props: {
+    setOpenAbout: React.Dispatch<React.SetStateAction<boolean>>;
+  },
+  ref: React.Ref<HTMLElement>
+) => {
   const { setOpenAbout } = props;
   return (
     <Box sx={{ my: 12, mx: 16 }} ref={ref} tabIndex={-1}>
       <Stack direction={"row"} justifyContent={"space-between"} sx={{ mb: 4 }}>
         <Box sx={{ color: "#FFFFFF", fontSize: 40 }}>ABOUT</Box>
-        <IconButton
-          onClick={() => setOpenAbout(false)}
-        >
+        <IconButton onClick={() => setOpenAbout(false)}>
           <CloseIcon sx={{ width: 40, height: 40, color: "#FFFFFF" }} />
         </IconButton>
       </Stack>
@@ -36,35 +37,37 @@ const About = (props: {
           inc.設立。
         </Box>
         <Box sx={{ color: "#FFFFFF", fontSize: 14, my: 2, width: "50%" }}>
-          He is a Technical Director, Interaction Designer, Front-End
-          Developer and VJ. He always thinks that he would love to create
-          things that make people excited with expression and technology. He
-          would like to keep being enthusiastic about craftsmanship and
-          improve himself every day. In digital works that are rapidly
-          developing changing, it is his ultimate goal to create something
-          that at least the next generation of people can be touched by.
+          He is a Technical Director, Interaction Designer, Front-End Developer
+          and VJ. He always thinks that he would love to create things that make
+          people excited with expression and technology. He would like to keep
+          being enthusiastic about craftsmanship and improve himself every day.
+          In digital works that are rapidly developing changing, it is his
+          ultimate goal to create something that at least the next generation of
+          people can be touched by.
           <br></br>
           <br></br>
-          He co-founded ARCHETYP Inc, which is his owned web production
-          company in Tokyo, in May 2007. He has been involved in a lot of
-          variety of projects such as advertising, marketing and branding
-          websites, apps and digital installations as a Technical Direcor or
-          Programmer. He is put his heart into them and has got some
-          evaluations and awards. In January 2017, he decided to study abroad
-          in London and had lived there for 11 months. And then he took a
-          swing through Europe cities, which are Paris, Berlin and Vienna. He
-          met a lot of people from all around the world and experienced a lot
-          of various type of cultures and their sense of values. After that he
-          came back to Tokyo and worked beyond the border as a Freelancer
-          based in Tokyo Japan for 2 years. He founded Calmhectic inc in 2nd
-          October 2020.
+          He co-founded ARCHETYP Inc, which is his owned web production company
+          in Tokyo, in May 2007. He has been involved in a lot of variety of
+          projects such as advertising, marketing and branding websites, apps
+          and digital installations as a Technical Direcor or Programmer. He is
+          put his heart into them and has got some evaluations and awards. In
+          January 2017, he decided to study abroad in London and had lived there
+          for 11 months. And then he took a swing through Europe cities, which
+          are Paris, Berlin and Vienna. He met a lot of people from all around
+          the world and experienced a lot of various type of cultures and their
+          sense of values. After that he came back to Tokyo and worked beyond
+          the border as a Freelancer based in Tokyo Japan for 2 years. He
+          founded Calmhectic inc in 2nd October 2020.
         </Box>
       </Stack>
     </Box>
   );
 };
 
-const RefAbout = forwardRef<HTMLElement, { setOpenAbout: React.Dispatch<React.SetStateAction<boolean>> }>(About);
+const RefAbout = forwardRef<
+  HTMLElement,
+  { setOpenAbout: React.Dispatch<React.SetStateAction<boolean>> }
+>(About);
 RefAbout.displayName = "RefAbout";
 
 export default RefAbout;

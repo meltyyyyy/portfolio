@@ -28,10 +28,10 @@ const Home: NextPage = () => {
     <>
       {/* <Canvas /> */}
       <Modal open={openAbout} onClose={() => setOpenAbout(false)}>
-        <RefAbout setOpenAbout={setOpenAbout}/>
+        <RefAbout setOpenAbout={setOpenAbout} />
       </Modal>
       <Modal open={openWork} onClose={() => setOpenWork(false)}>
-        <RefWork setOpenWork={setOpenWork}/>
+        <RefWork setOpenWork={setOpenWork} />
       </Modal>
       <Box sx={{ m: 2 }}>
         <Stack
