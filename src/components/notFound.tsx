@@ -1,7 +1,7 @@
 import { Box, Container, Alert } from "@mui/material";
 
-const NotFound = (props: { message: "404 ページは存在しません" }) => {
-  const { message } = props;
+const NotFound = (props: { message?: string }) => {
+  const { message = "404 ページは存在しません" } = props;
   return (
     <Box>
       <Container component="main" maxWidth="xs">

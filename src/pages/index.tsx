@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Canvas />
+      {/* <Canvas /> */}
       <Modal open={openAbout} onClose={() => setOpenAbout(false)}>
         <About />
       </Modal>

@@ -1,6 +1,6 @@
 import NotFound from "components/notFound";
 
 const Page404 = () => {
-  return <NotFound></NotFound>;
+  return <NotFound />;
 };
 export default Page404;
