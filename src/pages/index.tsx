@@ -1,4 +1,4 @@
-import { Button, Link, Modal } from "@mui/material";
+import { Button, LinearProgress, Link, Modal } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import {
   FacebookUrl,
@@ -18,7 +18,9 @@ import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
-const Canvas = dynamic(() => import("sketches/canvas"), { ssr: false });
+const Canvas = dynamic(() => {
+  return import("sketches/canvas");
+}, { ssr: false });
 
 const Home: NextPage = () => {
   const [openAbout, setOpenAbout] = useState<boolean>(false);
@@ -26,7 +28,8 @@ const Home: NextPage = () => {
 
   return (
     <>
-      {/* <Canvas /> */}
+      <div id="p5_loading"></div>
+      <Canvas />
       <Modal open={openAbout} onClose={() => setOpenAbout(false)}>
         <RefAbout setOpenAbout={setOpenAbout} />
       </Modal>

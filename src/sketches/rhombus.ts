@@ -94,6 +94,7 @@ const rhombus = (p: p5) => {
     }
   };
   p.mouseClicked = () => {
+    p.userStartAudio();
     if (song.isPlaying()) {
       song.pause();
     } else {
