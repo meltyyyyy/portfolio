@@ -1,4 +1,4 @@
-import { Button, LinearProgress, Link, Modal } from "@mui/material";
+import { Button, Link, Modal } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import {
   FacebookUrl,
@@ -17,6 +17,7 @@ import RefWork from "components/work";
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import { useState } from "react";
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
 const Canvas = dynamic(() => {
   return import("sketches/canvas");
@@ -28,8 +29,8 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <div id="p5_loading"></div>
-      <Canvas />
+      {/* <div id="p5_loading"></div>
+      <Canvas /> */}
       <Modal open={openAbout} onClose={() => setOpenAbout(false)}>
         <RefAbout setOpenAbout={setOpenAbout} />
       </Modal>
@@ -170,6 +171,17 @@ const Home: NextPage = () => {
             CONTACT
           </Button>
         </Stack>
+
+        <VolumeUpIcon sx={{
+          position: "absolute",
+          bottom: 0,
+          right: 0,
+          m: 2,
+          "&:hover": {
+            background: "transparent",
+            color: "#797979",
+          },
+        }} />
       </Box>
     </>
   );

@@ -18,6 +18,7 @@ const rhombus = (p: p5) => {
     const canvas = p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
     canvas.position(0, 0);
     canvas.style("z-index", "-1");
+
     p.angleMode(p.DEGREES);
     fft = new p5.FFT();
     p.orbitControl();
