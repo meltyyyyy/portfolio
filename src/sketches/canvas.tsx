@@ -5,9 +5,9 @@ import rhombus from "./rhombus";
 const Canvas = () => {
   useEffect(() => {
     document.body.style.overflow = "hidden";
-    new p5(rhombus)
+    new p5(rhombus);
   }, []);
   return <></>;
 };
 
-export default Canvas
+export default Canvas;

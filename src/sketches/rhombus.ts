@@ -17,7 +17,7 @@ const rhombus = (p: p5) => {
   p.setup = () => {
     const canvas = p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
     canvas.position(0, 0);
-    canvas.style('z-index', '-1');
+    canvas.style("z-index", "-1");
     p.angleMode(p.DEGREES);
     fft = new p5.FFT();
     p.orbitControl();
@@ -84,7 +84,11 @@ const rhombus = (p: p5) => {
         const index = p.floor(p.map(i, 0, 180, 0, wave.length - 1));
         const rod = p.map(wave[index], -1, 1, 15, 350);
         p.noFill();
-        p.vertex(rad * p.sin(j) * rod, rad * -p.tan(j) * rod, p.sin(p.frameCount * 4 + i * 2) * 60);
+        p.vertex(
+          rad * p.sin(j) * rod,
+          rad * -p.tan(j) * rod,
+          p.sin(p.frameCount * 4 + i * 2) * 60
+        );
       }
       p.endShape(p.CLOSE);
     }

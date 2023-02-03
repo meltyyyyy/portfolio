@@ -1,8 +1,18 @@
 import { Button, Link, Modal } from "@mui/material";
 import { Box, Stack } from "@mui/system";
-import { FacebookUrl, GitHubUrl, LinkedInUrl, TwitterUrl } from "common/constants";
+import {
+  FacebookUrl,
+  GitHubUrl,
+  LinkedInUrl,
+  TwitterUrl,
+} from "common/constants";
 import About from "components/about";
-import { FacebookIcon, GitHubIcon, LinkedInIcon, TwitterIcon } from "components/appIcons";
+import {
+  FacebookIcon,
+  GitHubIcon,
+  LinkedInIcon,
+  TwitterIcon,
+} from "components/appIcons";
 import Work from "components/work";
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
@@ -16,59 +26,84 @@ const Home: NextPage = () => {
 
   return (
     <>
-      {/* <Canvas /> */}
-      <Modal
-        open={openAbout}
-        onClose={() => setOpenAbout(false)}
-      >
+      <Canvas />
+      <Modal open={openAbout} onClose={() => setOpenAbout(false)}>
         <About />
       </Modal>
-      <Modal
-        open={openWork}
-        onClose={() => setOpenWork(false)}
-      >
+      <Modal open={openWork} onClose={() => setOpenWork(false)}>
         <Work />
       </Modal>
       <Box sx={{ m: 2 }}>
-        <Stack direction={"row"} justifyContent={"space-between"} alignItems="center">
+        <Stack
+          direction={"row"}
+          justifyContent={"space-between"}
+          alignItems="center"
+        >
           <Box sx={{ fontSize: 28, fontWeight: "bold" }}>TAKERU ABE</Box>
           <Stack direction={"row"}>
-            <Link href={TwitterUrl} target="_blank" rel="noopener noreferrer" color="inherit">
+            <Link
+              href={TwitterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit"
+            >
               <TwitterIcon
                 sx={{
                   mx: 1,
-                  '&:hover': {
+                  "&:hover": {
                     background: "transparent",
-                    color: '#797979'
+                    color: "#797979",
                   },
-                }} />
+                }}
+              />
             </Link>
-            <Link href={GitHubUrl} target="_blank" rel="noopener noreferrer" color="inherit">
-              <GitHubIcon sx={{
-                mx: 1,
-                '&:hover': {
-                  background: "transparent",
-                  color: '#797979'
-                },
-              }} />
+            <Link
+              href={GitHubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit"
+            >
+              <GitHubIcon
+                sx={{
+                  mx: 1,
+                  "&:hover": {
+                    background: "transparent",
+                    color: "#797979",
+                  },
+                }}
+              />
             </Link>
-            <Link href={LinkedInUrl} target="_blank" rel="noopener noreferrer" color="inherit">
-              <LinkedInIcon sx={{
-                mx: 1,
-                '&:hover': {
-                  background: "transparent",
-                  color: '#797979'
-                },
-              }} />
+            <Link
+              href={LinkedInUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit"
+            >
+              <LinkedInIcon
+                sx={{
+                  mx: 1,
+                  "&:hover": {
+                    background: "transparent",
+                    color: "#797979",
+                  },
+                }}
+              />
             </Link>
-            <Link href={FacebookUrl} target="_blank" rel="noopener noreferrer" color="inherit">
-              <FacebookIcon sx={{
-                ml: 1,
-                '&:hover': {
-                  background: "transparent",
-                  color: '#797979'
-                },
-              }} />
+            <Link
+              href={FacebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit"
+            >
+              <FacebookIcon
+                sx={{
+                  ml: 1,
+                  "&:hover": {
+                    background: "transparent",
+                    color: "#797979",
+                  },
+                }}
+              />
             </Link>
           </Stack>
         </Stack>
@@ -77,46 +112,60 @@ const Home: NextPage = () => {
             onClick={() => setOpenAbout(true)}
             sx={{
               color: "#000000",
-              '&:hover': {
+              "&:hover": {
                 background: "transparent",
-                color: '#797979'
+                color: "#797979",
               },
               fontSize: 14,
               mr: 1,
               minHeight: 0,
               minWidth: 0,
-              padding: 0
+              padding: 0,
             }}
             variant="text"
-          >ABOUT</Button>
+          >
+            ABOUT
+          </Button>
           <Button
             onClick={() => setOpenWork(true)}
             sx={{
               color: "#000000",
-              '&:hover': {
+              "&:hover": {
                 background: "transparent",
-                color: '#797979'
+                color: "#797979",
               },
               fontSize: 14,
               mx: 1,
               minHeight: 0,
               minWidth: 0,
-              padding: 0
-            }} variant="text">WORK</Button>
+              padding: 0,
+            }}
+            variant="text"
+          >
+            WORK
+          </Button>
           <Button
-            onClick={() => window.open("mailto:takeru.abe.g1@gmail.com?subject=Subject&body=Body%20goes%20here")}
+            onClick={() =>
+              window.open(
+                "mailto:takeru.abe.g1@gmail.com?subject=Subject&body=Body%20goes%20here"
+              )
+            }
             sx={{
               color: "#000000",
-              '&:hover': {
+              "&:hover": {
                 background: "transparent",
-                color: '#797979'
+                color: "#797979",
               },
               fontSize: 14,
               mx: 1,
               minHeight: 0,
               minWidth: 0,
-              padding: 0
-            }} variant="text">CONTACT</Button>
+              padding: 0,
+            }}
+            variant="text"
+          >
+            CONTACT
+          </Button>
         </Stack>
       </Box>
     </>
