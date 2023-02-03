@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         <About />
       </Modal>
       <Modal open={openWork} onClose={() => setOpenWork(false)}>
-        <RefWork />
+        <RefWork setOpenWork={setOpenWork}/>
       </Modal>
       <Box sx={{ m: 2 }}>
         <Stack
