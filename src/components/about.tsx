@@ -1,11 +1,21 @@
-import { Box, Stack } from "@mui/material";
+import { Box, IconButton, Stack } from "@mui/material";
 import { forwardRef } from "react";
+import CloseIcon from '@mui/icons-material/Close';
 
-const About = (props: { forwardRef: React.Ref<HTMLElement> }) => {
-  const { forwardRef } = props;
+const About = (props: {
+  setOpenAbout: React.Dispatch<React.SetStateAction<boolean>>;
+}, ref: React.Ref<HTMLElement>) => {
+  const { setOpenAbout } = props;
   return (
-    <Box sx={{ my: 12, mx: 16 }} ref={forwardRef} tabIndex={-1}>
-      <Box sx={{ color: "#FFFFFF", fontSize: 40, mb: 4 }}>ABOUT</Box>
+    <Box sx={{ my: 12, mx: 16 }} ref={ref} tabIndex={-1}>
+      <Stack direction={"row"} justifyContent={"space-between"} sx={{ mb: 4 }}>
+        <Box sx={{ color: "#FFFFFF", fontSize: 40 }}>ABOUT</Box>
+        <IconButton
+          onClick={() => setOpenAbout(false)}
+        >
+          <CloseIcon sx={{ width: 40, height: 40, color: "#FFFFFF" }} />
+        </IconButton>
+      </Stack>
       <Stack direction={"row"} justifyContent={"space-between"}>
         <Box sx={{ color: "#FFFFFF", fontSize: 20, my: 1, width: "50%" }}>
           阿部 武
@@ -54,10 +64,7 @@ const About = (props: { forwardRef: React.Ref<HTMLElement> }) => {
   );
 };
 
-const RefAbout = forwardRef<HTMLElement>((_, ref) => {
-  return <About forwardRef={ref} />;
-});
-
+const RefAbout = forwardRef<HTMLElement, { setOpenAbout: React.Dispatch<React.SetStateAction<boolean>> }>(About);
 RefAbout.displayName = "RefAbout";
 
 export default RefAbout;

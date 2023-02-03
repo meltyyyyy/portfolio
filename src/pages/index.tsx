@@ -6,7 +6,7 @@ import {
   LinkedInUrl,
   TwitterUrl,
 } from "common/constants";
-import About from "components/about";
+import RefAbout from "components/about";
 import {
   FacebookIcon,
   GitHubIcon,
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
     <>
       {/* <Canvas /> */}
       <Modal open={openAbout} onClose={() => setOpenAbout(false)}>
-        <About />
+        <RefAbout setOpenAbout={setOpenAbout}/>
       </Modal>
       <Modal open={openWork} onClose={() => setOpenWork(false)}>
         <RefWork setOpenWork={setOpenWork}/>
