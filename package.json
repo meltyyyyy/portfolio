@@ -6,6 +6,7 @@
     "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start -p 4000",
+    "export": "next export",
     "lint": "eslint --cache --fix src/ && prettier --write src/"
   },
   "dependencies": {
