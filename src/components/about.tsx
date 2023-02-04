@@ -29,35 +29,17 @@ const About = (
         <Box
           sx={{ color: "#FFFFFF", fontSize: 14, my: 2, pr: 4, width: "50%" }}
         >
-          日本生まれのテクニカルディレクター、インタラクション・デザイナー、フロントエンド・デベロッパー、VJ。
-          表現と技術で人をワクワクさせられるモノづくりをしたいと常日頃から考えている。クラフトマンシップにこだわり、自分を研鑽していける日々を過ごせたら本望だと個人的には思っており、消費の速いデジタル作品においても長く残るモノ、せめて次の世代の人たちに触れてもらえるモノを作ることが最終目標である。
+          日本生まれのフロントエンドエンジニア、バックエンドエンジニア、MLエンジニア。
+          最新のテクノロジー全般(特にAI,VR/AR,Brain Tech)に興味があり、最先端技術とビジネスの組み合わせによって社会に存在する課題を解決したいと考えている。進化のスピードが早い技術領域において、基礎となる仕組みの理解こそが技術のキャッチアップ力につながると考え、日頃から技術の数学的な解釈やアルゴリズムへの理解を大切にしている。
           <br></br>
           <br></br>
-          2007年5月、株式会社アーキタイプを共同設立。数々の企業のプロモーションやブランディング等に伴うWebサイト、インスタレーション、アプリケーション開発等、デジタルなプロジェクトのテクニカルディレクションやプログラミングに携わる。国外でのデジタル広告賞の受賞が多い。2017年1月、心から自分のやりたいことをしたいと強く思うようになり、設立10年を節目にアーキタイプを退職し、留学のため渡英。ロンドンにて11ヶ月間ほど過ごし、その後パリ、ベルリン、ウィーンで4ヶ月間過ごしたのち帰国。15ヶ月間ほど色々な国の人や文化、価値観に触れ、多くの感覚を吸収。約2年ほどフリーランスとして東京をベースに国境関係なく活動。2020年10月、Calmhectic
-          inc.設立。
+          2019年4月に東北大学に入学しComputer Scienceを専攻する。大学在学中は海外に頻繁に赴き、現地の歴史や文化を堪能した。様々な人種と文化が混ざり合いながら高度に発展しているシンガポールや、先端技術の社会実装とアカデミアへの還元のエコシステムを確立しているアメリカには感銘を受けた。また、在学中は開発業務にも携わり、モバイルアプリ開発からウェブ開発まで幅広くエンジニアとしての経験を積んだ。2023年4月からは大阪大学生命機能研究科に進学し、脳の情報処理の仕組みに関する研究を行う。人間の意識をサイバースペース上にアップロードすることを夢見ており、実現のために人間の脳内の情報処理の仕組みを解明することや人間の知能を模した人工汎用性知能の開発が必要であると考えている。
         </Box>
         <Box sx={{ color: "#FFFFFF", fontSize: 14, my: 2, width: "50%" }}>
-          He is a Technical Director, Interaction Designer, Front-End Developer
-          and VJ. He always thinks that he would love to create things that make
-          people excited with expression and technology. He would like to keep
-          being enthusiastic about craftsmanship and improve himself every day.
-          In digital works that are rapidly developing changing, it is his
-          ultimate goal to create something that at least the next generation of
-          people can be touched by.
+        I am a front-end, back-end, and ML engineer born in Japan. I am interested in the latest technology, especially AI, VR/AR, and Brain Tech. I believe that solving societal problems can be achieved by combining cutting-edge technology and business. I think that understanding the underlying mechanisms in rapidly evolving technology fields is crucial for keeping up with technology, and therefore, I value the mathematical interpretation and understanding of algorithms in technology.
           <br></br>
           <br></br>
-          He co-founded ARCHETYP Inc, which is his owned web production company
-          in Tokyo, in May 2007. He has been involved in a lot of variety of
-          projects such as advertising, marketing and branding websites, apps
-          and digital installations as a Technical Direcor or Programmer. He is
-          put his heart into them and has got some evaluations and awards. In
-          January 2017, he decided to study abroad in London and had lived there
-          for 11 months. And then he took a swing through Europe cities, which
-          are Paris, Berlin and Vienna. He met a lot of people from all around
-          the world and experienced a lot of various type of cultures and their
-          sense of values. After that he came back to Tokyo and worked beyond
-          the border as a Freelancer based in Tokyo Japan for 2 years. He
-          founded Calmhectic inc in 2nd October 2020.
+          I entered Tohoku University in April 2019, majoring in Computer Science. During my university studies, I frequently traveled abroad and experienced different cultures and histories. I was impressed by Singapore where diverse races and cultures coexist and advance, and the United States where advanced technology is being implemented and has a well-established ecosystem that contributes to academia. I also gained experience as an engineer, working on a range of projects, from mobile app development to web development. Starting in April 2023, I will continue my studies at Graduate School of Frontier Biosciences Osaka University, researching information processing in the brain. I dream of uploading human consciousness to cyberspace, and I believe that understanding the information processing mechanisms in the human brain and developing artificial general intelligence that mimics human intelligence are necessary for achieving this.
         </Box>
       </Stack>
     </Box>
