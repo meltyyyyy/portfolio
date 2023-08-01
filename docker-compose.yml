@@ -6,7 +6,7 @@ services:
     container_name: portfolio
     tty: true
     ports:
-      - 4000:4000
+      - 8000:8000
     volumes:
       - .:/root/portfolio
 
